@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drabon Med – Egészségügyi Szolgáltató Kft.</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- ===================== NAVBAR ===================== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <img src="../logo.png" alt="Drabon Med Logo" class="logo-img">
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">Bemutatkozás</a></li>
+                <li><a href="#services">Szolgáltatások</a></li>
+                <li><a href="#regulations">Jogszabályok</a></li>
+                <li><a href="#prices">Árak</a></li>
+                <li><a href="#contact">Kapcsolat</a></li>
+            </ul>
+            <a href="#calculator" class="nav-cta">Távolság Kalkulátor</a>
+            <button class="hamburger" id="hamburger" aria-label="Menü megnyitása">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile menu overlay -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-links">
+            <li><a href="#about">Bemutatkozás</a></li>
+            <li><a href="#services">Szolgáltatások</a></li>
+            <li><a href="#regulations">Jogszabályok</a></li>
+            <li><a href="#prices">Árak</a></li>
+            <li><a href="#contact">Kapcsolat</a></li>
+            <li><a href="#calculator" class="mobile-cta">Távolság Kalkulátor</a></li>
+        </ul>
+    </div>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <h1 class="hero-title animate-fade-up">Drabon Med</h1>
+            <p class="hero-subtitle animate-fade-up delay-1">Egészségügyi Szolgáltató Kft.</p>
+            <p class="hero-desc animate-fade-up delay-2">Professzionális egészségügyi szolgáltatások — betegszállítás, rendezvénybiztosítás, elsősegély oktatás.</p>
+            <div class="hero-buttons animate-fade-up delay-3">
+                <a href="#services" class="btn btn-primary">Szolgáltatásaink</a>
+                <a href="#calculator" class="btn btn-secondary">Ár Kalkulátor</a>
+            </div>
+        </div>
+        <div class="hero-image animate-fade-left">
+            <img src="../car.jpg" alt="Drabon Med mentőgépjármű">
+        </div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <span class="section-tag">Rólunk</span>
+                <h2>Bemutatkozás</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-text scroll-reveal">
+                    <h3>Köszöntjük a Drabon Med Egészségügyi Szolgáltató Kft. weboldalán!</h3>
+                    <p>Üdvözli Önt a Drabon Med Egészségügyi Szolgáltató Kft. ügyvezető igazgatója, <strong>Drabon József</strong>.</p>
+                    <p>Egészségügyi szolgáltatásunk létrehozásának célja a megfelelő, pontos, valamint precíz szolgáltatások nyújtása ügyfeleink részére.</p>
+                    <p>Számos kérdést és problémát vet fel a laikus emberek, rendezvényszervezők számára a rendezvényeik egészségügyi biztosításának szükségessége, vagy akár ezek megfelelő szintjei kiválasztása. Mi ebben a nagy kérdésben segítünk döntést hozni tanácsainkkal, szolgáltatásainkkal az Ön részére.</p>
+                    <p>Működésünket rendezvények egészségügyi biztosításával kezdtük gyalogőrségi szinten, amit a mai napig fenntartunk. Mára már egy kimagaslóan felszerelt saját tulajdonunkban álló mentőgépjármű is segítségünkre lehet rendezvényeik egészségügyi biztosításában.</p>
+                </div>
+                <div class="about-image scroll-reveal">
+                    <img src="../badge.jpg" alt="Drabon Med jelvény">
+                </div>
+            </div>
+            <div class="about-extra scroll-reveal">
+                <p>Pályafutásunk alatt, valamint jelenlegi és leendő ügyfeleink számára, minden alkalommal törekedtünk és törekedni is fogunk a megfelelő megoldás és közös út kiválasztásában, hogy rendezvényeik, eseményeik, oktatásaik a lehető legmagasabb színvonalon, a lehető leggördülékenyebben valósulhasson meg.</p>
+                <p>Céges eszközparkunkon hétről hétre fejlesztéseket hajtunk végre, hogy a betegeket a legkorszerűbb eszközökkel tudjuk ellátni.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== SERVICES ===================== -->
+    <section class="section services" id="services">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <span class="section-tag">Szolgáltatásaink</span>
+                <h2>Amit kínálunk</h2>
+                <p class="section-desc">A rendezvények egészségügyi biztosítása minden szempontból fontos, egyben kiemelkedő szerepet tölt be. Mi segítünk kiválasztani az Önnek megfelelő egészségügyi biztosítás típusát.</p>
+            </div>
+            <div class="services-grid">
+                <!-- Service 1: Patient Transport -->
+                <div class="service-card scroll-reveal">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 17h8M8 17a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm8 0a2 2 0 1 0 4 0 2 2 0 0 0-4 0ZM1 5h3l2 9h12l1-4H6"/><path d="M13 5v4m-2-2h4"/></svg>
+                    </div>
+                    <h3>Betegszállítás</h3>
+                    <p>Cégünk tevékenységi körébe a betegszállítás mellett az őrzött betegszállítás is megtalálható. Kiemelkedő gépkocsi felszereltségünk mellett munkatársaink szakértelmére is számíthat.</p>
+                    <span class="service-badge">Őrzött szállítás is</span>
+                </div>
+
+                <!-- Service 2: Event Security -->
+                <div class="service-card scroll-reveal">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l8 4v6c0 5.25-3.5 9.74-8 11-4.5-1.26-8-5.75-8-11V6l8-4z"/><path d="M9 12l2 2 4-4"/></svg>
+                    </div>
+                    <h3>Rendezvénybiztosítás</h3>
+                    <p>Gyalogőrségi, mentőgépkocsis és esetkocsis mozgóőrségekben is szerepet tudunk vállalni. A kilátogatók, vendégek részére biztonságérzetet nyújt az egészségügyi személyzet jelenléte.</p>
+                    <span class="service-badge">Gyalogőrség & Mozgóőrség</span>
+                </div>
+
+                <!-- Service 3: First Aid Training -->
+                <div class="service-card scroll-reveal">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"/></svg>
+                    </div>
+                    <h3>Elsősegély oktatás</h3>
+                    <p>Az elsősegélynyújtás alapjai a mai világban létfontosságúnak számítanak. Oktatásaink minimum 1×4 órás időintervallumot foglalnak magukba. Megrendelhető iskolákba, munkahelyekre, táborokba.</p>
+                    <span class="service-badge">Min. 1×4 óra</span>
+                </div>
+
+                <!-- Service 4: First Aid Stations -->
+                <div class="service-card scroll-reveal">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 9v6m3-3H9m12 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0z"/></svg>
+                    </div>
+                    <h3>Elsősegélynyújtóhelyek kialakítása</h3>
+                    <p>Nagy forgalmú áruházak, plázák, építkezések és egyéb létesítményekben kialakítható elsősegélynyújtó helyiségek berendezését és üzemeltetését vállaljuk.</p>
+                    <span class="service-badge">Berendezés & Üzemeltetés</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== CALCULATOR ===================== -->
+    <section class="section calculator" id="calculator">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <span class="section-tag">Kalkulátor</span>
+                <h2>Szállítási Ár Kalkulátor</h2>
+                <p class="section-desc">Tervezze meg a szállítás költségét! Válassza ki az indulási és érkezési pontot, és kalkulátorunk kiszámolja a becsült árat.</p>
+            </div>
+            <div class="calc-wrapper scroll-reveal">
+                <div class="calc-form">
+                    <div class="calc-field">
+                        <label for="origin">Indulási pont</label>
+                        <input type="text" id="origin" placeholder="pl. Budapest, Kossuth tér">
+                    </div>
+                    <div class="calc-field">
+                        <label for="destination">Érkezési pont</label>
+                        <input type="text" id="destination" placeholder="pl. Debrecen, Klinika">
+                    </div>
+                    <button class="btn btn-primary btn-calc" id="calcBtn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><path d="M9 7h6m-6 4h6m-6 4h4m-7 5h10a2 2 0 002-2V6a2 2 0 00-2-2H7a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                        Ár kiszámítása
+                    </button>
+                </div>
+                <div class="calc-map" id="mapContainer">
+                    <div class="map-placeholder">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="48" height="48"><path d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/><path d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0z"/></svg>
+                        <p>A térkép itt fog megjelenni</p>
+                        <small>(API integráció később)</small>
+                    </div>
+                </div>
+                <div class="calc-result" id="calcResult" style="display:none;">
+                    <div class="result-content">
+                        <div class="result-row">
+                            <span>Távolság:</span>
+                            <strong id="resultDistance"></strong>
+                        </div>
+                        <div class="result-row">
+                            <span>Becsült idő:</span>
+                            <strong id="resultTime"></strong>
+                        </div>
+                        <div class="result-divider"></div>
+                        <div class="result-row result-total">
+                            <span>Becsült ár:</span>
+                            <strong id="resultPrice"></strong>
+                        </div>
+                        <p class="result-note">* A végső ár egyedi megbeszélés alapján változhat. Kérjük keressen minket a pontos árajánlatért!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== REGULATIONS ===================== -->
+    <section class="section regulations" id="regulations">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <span class="section-tag">Jogszabályok</span>
+                <h2>Vonatkozó jogszabályok</h2>
+            </div>
+            <div class="regulations-grid">
+                <div class="regulation-card scroll-reveal">
+                    <div class="reg-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"/></svg>
+                    </div>
+                    <h3>Rendezvények egészségügyi biztosítása</h3>
+                    <p><strong>5/2006. (II. 7.) EüM rendelet</strong> a mentésről.</p>
+                    <p><strong>54/2004. (III. 31.) Korm. rendelet</strong> a sportrendezvények biztonságáról.</p>
+                    <div class="reg-details">
+                        <p><strong>Gyalogőrség:</strong> Épületben vagy kis területre korlátozott szabadtéren, 1001 főnél kevesebb résztvevővel. Zárt térben 300–1000 fő közötti zenés táncos rendezvénynél egy fő gyalogőrség szükséges.</p>
+                        <p><strong>Mozgóőrség:</strong> 1000–5000 fő esetén egy esetkocsi és annyi mentőgépkocsi szükséges, hogy a legtávolabbi pont 10 percen belül elérhető legyen.</p>
+                    </div>
+                    <a href="https://net.jogtar.hu/jogszabaly?docid=a0600005.eum" target="_blank" class="reg-link">Jogszabály megtekintése →</a>
+                </div>
+                <div class="regulation-card scroll-reveal">
+                    <div class="reg-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9z"/></svg>
+                    </div>
+                    <h3>Betegszállítás</h3>
+                    <p><strong>19/1998. (VI. 3.) NM rendelet</strong> a betegszállításról.</p>
+                    <div class="reg-details">
+                        <p>A rendelet hatálya kiterjed minden Magyarország területén végzett betegszállításra. A szállítás lehet 6 órán belüli, 24 órán belüli, vagy meghatározott időpontra kért.</p>
+                        <p>A betegszállítás módja szerint: mentőkocsival, fekvőbeteg-szállító kocsival, vagy ülőbeteg-szállító kocsival teljesíthető.</p>
+                    </div>
+                    <a href="https://net.jogtar.hu/jogszabaly?docid=a0400054.kor" target="_blank" class="reg-link">Jogszabály megtekintése →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== PRICES ===================== -->
+    <section class="section prices" id="prices">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <span class="section-tag">Árak</span>
+                <h2>Áraink</h2>
+            </div>
+            <div class="price-card scroll-reveal">
+                <div class="price-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="48" height="48"><path d="M2.25 18.75a60.07 60.07 0 0 1 15.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 0 1 3 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 0 0-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 0 1-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 0 0 3 15h-.75M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/></svg>
+                </div>
+                <h3>Egyedi árajánlat</h3>
+                <p>Egyedi árajánlatért kérem keressen minket bizalommal a kapcsolat menüpontban feltüntetett elérhetőségeink egyikén.</p>
+                <p><strong>Hosszabb távú együttműködés esetén kedvezményt biztosítunk.</strong></p>
+                <div class="price-notes">
+                    <div class="price-note">
+                        <span class="note-icon">⚠️</span>
+                        <p>A rendezvényt megelőző <strong>3 naptári napon belüli</strong> megrendelés esetén <strong>+50% felár</strong>.</p>
+                    </div>
+                    <div class="price-note">
+                        <span class="note-icon">📋</span>
+                        <p>Mindkét fél által aláírt megrendelőlap esetén, a rendezvény kezdetét megelőző <strong>5 naptári napon belül</strong> lemondott esemény <strong>50%-a fizetendő</strong>.</p>
+                    </div>
+                </div>
+                <p class="price-disclaimer">Az árváltozás jogát fenntartjuk!</p>
+                <a href="#calculator" class="btn btn-primary">Használja kalkulátorunkat →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <span class="section-tag">Kapcsolat</span>
+                <h2>Elérhetőségeink</h2>
+                <p class="section-desc">Ügyfélszolgálatunk munkanapokon 8–20 óra között fogadja hívását.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-card scroll-reveal">
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25z"/></svg>
+                    </div>
+                    <h3>Telefon</h3>
+                    <p><strong>Ügyvezető:</strong></p>
+                    <a href="tel:+36305534160">+36 30 553 4160</a>
+                    <p><strong>Kapcsolati koordinátor:</strong></p>
+                    <a href="tel:+36306497638">+36 30 649 7638</a>
+                </div>
+                <div class="contact-card scroll-reveal">
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"/></svg>
+                    </div>
+                    <h3>E-mail</h3>
+                    <a href="mailto:drabonmed@gmail.com">drabonmed@gmail.com</a>
+                </div>
+                <div class="contact-card scroll-reveal">
+                    <div class="contact-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/><path d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0z"/></svg>
+                    </div>
+                    <h3>Cím</h3>
+                    <p>3775 Kondó<br>Kossuth Lajos utca 12.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="../logo.png" alt="Drabon Med Logo" class="footer-logo">
+                    <p>© 2026 Drabon Med Egészségügyi Szolgáltató Kft. Minden jog fenntartva!</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#about">Bemutatkozás</a>
+                    <a href="#services">Szolgáltatások</a>
+                    <a href="#prices">Árak</a>
+                    <a href="#contact">Kapcsolat</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating CTA Button -->
+    <a href="#calculator" class="floating-cta" id="floatingCta" title="Szállítási Ár Kalkulátor">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24"><path d="M9 7h6m-6 4h6m-6 4h4m-7 5h10a2 2 0 002-2V6a2 2 0 00-2-2H7a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+        <span>Ár Kalkulátor</span>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>

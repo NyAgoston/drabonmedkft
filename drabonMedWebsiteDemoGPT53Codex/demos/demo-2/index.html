@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drabon Med – Redesign Demo 2</title>
+    <meta name="description" content="Multi-page corporate style redesign demo for Drabon Med." />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Tartalomra ugrás</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="./index.html">
+          <img src="../../logo.png" alt="Drabon Med logó" />
+          <span>Drabon Med</span>
+        </a>
+        <nav class="main-nav" aria-label="Elsődleges navigáció">
+          <a href="./index.html" class="active">Főoldal</a>
+          <a href="./pages/services.html">Szolgáltatások</a>
+          <a href="./pages/pricing.html">Árak és kalkulátor</a>
+          <a href="./pages/contact.html">Kapcsolat</a>
+        </nav>
+        <a class="header-cta" href="./pages/pricing.html">Távolság alapú árkalkulátor</a>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="page-hero">
+        <div class="container page-hero-grid">
+          <div class="hero-content reveal">
+            <span class="eyebrow">Multi-page koncepció</span>
+            <h1 data-content="hero.title"></h1>
+            <p data-content="hero.description"></p>
+            <div class="hero-actions">
+              <a class="button primary" href="./pages/contact.html">Kapcsolatfelvétel</a>
+              <a class="button secondary" href="./pages/services.html">Szolgáltatások áttekintése</a>
+            </div>
+          </div>
+          <div class="hero-card reveal">
+            <img src="../../car.jpg" alt="Drabon Med jármű" />
+          </div>
+        </div>
+      </section>
+
+      <section class="container highlight-grid" data-highlights></section>
+
+      <section class="section">
+        <div class="container service-layout">
+          <div class="feature-card reveal">
+            <span class="eyebrow">Bemutatkozás</span>
+            <h2>Letisztult, céges megjelenés gyors döntésekhez.</h2>
+            <div data-about-copy></div>
+          </div>
+          <img class="reveal" src="../../badge.jpg" alt="Azonosító jelvény" />
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="eyebrow">Kiemelt szolgáltatások</span>
+            <h2>Szétválasztott oldalak, egyértelmű struktúra.</h2>
+            <p>Ez a koncepció jobban működik akkor, ha a megrendelő külön oldalakban gondolkodik és hagyományosabb céges felépítést szeretne.</p>
+          </div>
+          <div class="feature-grid" data-service-cards></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-card">
+        <div>
+          <strong>Drabon Med redesign · Demo 2</strong>
+          <p>Külön oldalak, könnyen skálázható vállalati szerkezet.</p>
+        </div>
+        <a class="button secondary" href="../../index.html">Vissza a demo választóhoz</a>
+      </div>
+    </footer>
+
+    <script src="../../shared/content.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

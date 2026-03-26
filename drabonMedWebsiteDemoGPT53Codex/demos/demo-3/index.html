@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drabon Med – Redesign Demo 3</title>
+    <meta name="description" content="Editorial style one-page redesign demo for Drabon Med." />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Tartalomra ugrás</a>
+    <header class="site-header">
+      <div class="container nav-shell">
+        <a class="brand" href="#hero" aria-label="Drabon Med főoldal">
+          <img src="../../logo.png" alt="Drabon Med logó" />
+          <span>Drabon Med</span>
+        </a>
+        <nav class="main-nav" aria-label="Elsődleges navigáció">
+          <a href="#story">Történet</a>
+          <a href="#services">Szolgáltatások</a>
+          <a href="#calculator">Árkalkulátor</a>
+          <a href="#contact">Kapcsolat</a>
+        </nav>
+        <a class="nav-cta" href="#calculator">Távolság alapú árkalkulátor</a>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section id="hero" class="hero section">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal fade-up">
+            <span class="eyebrow">Editorial koncepció</span>
+            <h1>Nyugodt vizuális ritmus, erős bizalomépítés, emberi hang.</h1>
+            <p class="lead" data-content="hero.description"></p>
+            <div class="hero-actions">
+              <a class="button primary" href="#contact">Kapcsolatfelvétel</a>
+              <a class="button secondary" href="#services">Szolgáltatások megtekintése</a>
+            </div>
+          </div>
+          <div class="hero-visual reveal fade-up delay-1">
+            <div class="hero-image-card">
+              <img src="../../car.jpg" alt="Drabon Med jármű" />
+            </div>
+            <article class="note-card floating">
+              <strong>Olyan felépítés, ami nem siettet.</strong>
+              <p>Ez a változat inkább magyaráz, vezet és fokozatosan erősíti a bizalmat.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="story" class="section story-section">
+        <div class="container story-shell reveal fade-up">
+          <div class="story-heading">
+            <span class="eyebrow">Bemutatkozás</span>
+            <h2>Amikor a nyugodt kommunikáció ugyanolyan fontos, mint a szakmai háttér.</h2>
+          </div>
+          <div class="story-columns" data-story-columns></div>
+        </div>
+      </section>
+
+      <section class="section quote-section">
+        <div class="container quote-layout">
+          <article class="quote-card reveal fade-up">
+            <p class="quote-mark">“</p>
+            <blockquote>
+              A cél nem csupán jelen lenni, hanem megnyugtató, pontos és jól szervezett egészségügyi hátteret adni a helyzethez.
+            </blockquote>
+            <p class="quote-meta">Drabon Med szemlélet — erre épül a design tónusa is ebben a koncepcióban.</p>
+          </article>
+          <article class="badge-panel reveal fade-up delay-1">
+            <img src="../../badge.jpg" alt="Drabon Med jelvény" />
+            <div>
+              <strong>Magabiztos, de nem hideg megjelenés</strong>
+              <p>Nagy térközökkel, jól tagolt szövegekkel és visszafogott mozgással.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="services" class="section services-section">
+        <div class="container">
+          <div class="section-head reveal fade-up">
+            <span class="eyebrow">Szolgáltatások</span>
+            <h2>Szolgáltatási blokkok szerkesztőségi ritmusban.</h2>
+            <p>Ebben a demóban minden blokk több levegőt kap, ezért hosszabb olvasásnál is kényelmes marad.</p>
+          </div>
+          <div class="editorial-services" data-service-editorial></div>
+        </div>
+      </section>
+
+      <section id="calculator" class="section calculator-section">
+        <div class="container calculator-shell">
+          <div class="calculator-copy reveal fade-up">
+            <span class="eyebrow">Kiemelt funkció</span>
+            <h2 data-content="calculatorMock.title"></h2>
+            <p data-content="calculatorMock.description"></p>
+            <div class="pricing-notes" data-pricing-notes></div>
+          </div>
+          <article class="calculator-card reveal fade-up delay-1">
+            <form id="distance-form" class="distance-form">
+              <label>
+                Indulási hely
+                <select name="from" required></select>
+              </label>
+              <label>
+                Érkezési hely
+                <select name="to" required></select>
+              </label>
+              <label>
+                Szállítás típusa
+                <select name="serviceType">
+                  <option value="standard">Normál betegszállítás</option>
+                  <option value="guarded">Őrzött betegszállítás</option>
+                </select>
+              </label>
+              <button type="submit" class="button primary wide">Becsült ár kiszámítása</button>
+            </form>
+            <div class="estimate-panel" aria-live="polite">
+              <span>Becsült összeg</span>
+              <strong id="result-price">—</strong>
+              <p id="result-meta">A pontos algoritmus később külső térképes szolgáltatással váltható ki.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section rules-section">
+        <div class="container rules-grid">
+          <article class="rules-card reveal fade-up">
+            <span class="eyebrow">Rendezvénybiztosítás</span>
+            <h2>Jogszabályi háttér, közérthető keretbe helyezve.</h2>
+            <ul data-legal="eventCoverage"></ul>
+          </article>
+          <article class="rules-card reveal fade-up delay-1">
+            <span class="eyebrow">Betegszállítás</span>
+            <h2>Szabályozott működés, emberi kommunikációval.</h2>
+            <ul data-legal="patientTransport"></ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section">
+        <div class="container contact-shell reveal fade-up">
+          <div>
+            <span class="eyebrow">Kapcsolat</span>
+            <h2>Közvetlen elérés, egyszerű következő lépés.</h2>
+            <p>Ebben az irányban a kapcsolatfelvétel egy nyugodt, letisztult lezárásként jelenik meg.</p>
+          </div>
+          <div class="contact-grid" data-contact-cards></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-shell">
+        <div>
+          <strong>Drabon Med redesign · Demo 3</strong>
+          <p>Premium editorial single-page koncepció.</p>
+        </div>
+        <a class="button secondary" href="../../index.html">Vissza a demo választóhoz</a>
+      </div>
+    </footer>
+
+    <script src="../../shared/content.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

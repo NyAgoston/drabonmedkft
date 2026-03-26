@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drabon Med | Demo 5</title>
+    <meta
+      name="description"
+      content="Formális, vállalati hangulatú világos Drabon Med redesign koncepció jól strukturált szekciókkal és árkalkulátorral."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Libre+Franklin:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <div class="topline">
+        <div class="container topline__inner">
+          <span>Drabon Med Egészségügyi Szolgáltató Kft.</span>
+          <span>Munkanapokon 8:00–20:00</span>
+        </div>
+      </div>
+
+      <div class="container nav__inner">
+        <a class="brand" href="#top" aria-label="Drabon Med kezdőlap">
+          <img src="../logo.png" alt="Drabon Med logó" class="brand__logo" />
+          <span class="brand__text">
+            <strong>DRABON MED</strong>
+            <small>Egészségügyi szolgáltató</small>
+          </span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+          aria-label="Menü megnyitása"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="site-nav" id="site-nav" aria-label="Fő navigáció">
+          <a href="#overview">Áttekintés</a>
+          <a href="#services">Szolgáltatások</a>
+          <a href="#calculator">Árkalkulátor</a>
+          <a href="#pricing">Árak</a>
+          <a href="#contact">Kapcsolat</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="overview">
+        <div class="container hero__grid">
+          <div class="hero__copy reveal">
+            <p class="eyebrow">Formális és megbízható megjelenés</p>
+            <h1>Egészségügyi szolgáltatások átlátható, vállalati szemléletű bemutatása.</h1>
+            <p class="hero__lead">
+              Ez a koncepció a strukturált információátadásra, a hiteles megjelenésre és az
+              intézményi bizalomérzetre épít. Célja, hogy a látogatók gyorsan megértsék a fő
+              szolgáltatásokat és az elérhetőségeket.
+            </p>
+            <div class="hero__actions">
+              <a class="button button--primary" href="#contact">Ajánlatkérés</a>
+              <a class="button button--secondary" href="#calculator">Ár becslése</a>
+            </div>
+          </div>
+
+          <aside class="hero__aside reveal reveal--delay">
+            <div class="summary-card">
+              <h2>Kapcsolati összefoglaló</h2>
+              <a href="tel:+36305534160">Ügyvezető: +36 30 553 4160</a>
+              <a href="tel:+36306497638">Kapcsolati koordinátor: +36 30 649 7638</a>
+              <a href="mailto:drabonmed@gmail.com">drabonmed@gmail.com</a>
+              <p>3775 Kondó, Kossuth Lajos utca 12.</p>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section intro">
+        <div class="container intro__grid">
+          <div class="intro__image reveal">
+            <img src="../car.jpg" alt="Drabon Med mentőautó" />
+          </div>
+          <div class="intro__content reveal reveal--delay">
+            <p class="eyebrow">Bemutatkozás</p>
+            <h2>Pontos, precíz egészségügyi háttér rendezvényekhez és egyedi igényekhez.</h2>
+            <p>
+              A Drabon Med Egészségügyi Szolgáltató Kft. küldetése, hogy ügyfelei számára
+              megbízható, magas színvonalú és jól szervezett egészségügyi szolgáltatásokat nyújtson.
+            </p>
+            <p>
+              Szolgáltatásaink kiválasztásában tanácsadással is segítünk, hogy minden rendezvény,
+              oktatás vagy betegszállítás a megfelelő szinten valósuljon meg.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--soft" id="services">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Szolgáltatási portfólió</p>
+            <h2>Jól tagolt szolgáltatások, hivatalos megjelenéssel.</h2>
+          </div>
+
+          <div class="service-table">
+            <article class="service-item reveal">
+              <h3>Rendezvénybiztosítás</h3>
+              <p>
+                Egészségügyi biztosítás kisebb és nagyobb rendezvényekhez, az esemény jellegéhez
+                és látogatószámához igazítva.
+              </p>
+            </article>
+            <article class="service-item reveal reveal--delay">
+              <h3>Betegszállítás</h3>
+              <p>
+                Betegszállítás és őrzött betegszállítás korszerű háttérrel, egyedi megrendelési
+                lehetőséggel.
+              </p>
+            </article>
+            <article class="service-item reveal reveal--delay-2">
+              <h3>Elsősegély oktatás</h3>
+              <p>
+                Oktatási programok különböző intézmények és munkahelyek számára elsősegélynyújtási
+                témában.
+              </p>
+            </article>
+            <article class="service-item reveal">
+              <h3>Elsősegélyhelyek kialakítása</h3>
+              <p>
+                Egészségügyi helyiségek berendezése és üzemeltetési támogatása nagy forgalmú vagy
+                speciális helyszínekre.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="calculator">
+        <div class="container calculator__grid">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Árkalkulátor</p>
+            <h2>Tájékoztató jellegű becslés gyors áttekintéshez.</h2>
+            <p>
+              Az árkalkulátor jelenleg demó módban működik, de később térképes vagy útvonal-alapú
+              rendszerhez is kapcsolható.
+            </p>
+          </div>
+
+          <div class="panel reveal reveal--delay">
+            <form id="price-form" class="calculator-form">
+              <label>
+                <span>Indulási pont</span>
+                <select id="from-location" name="from-location" required>
+                  <option value="">Válasszon helyet</option>
+                  <option value="Miskolc">Miskolc</option>
+                  <option value="Kazincbarcika">Kazincbarcika</option>
+                  <option value="Ózd">Ózd</option>
+                  <option value="Eger">Eger</option>
+                  <option value="Budapest">Budapest</option>
+                </select>
+              </label>
+              <label>
+                <span>Érkezési pont</span>
+                <select id="to-location" name="to-location" required>
+                  <option value="">Válasszon helyet</option>
+                  <option value="Miskolc">Miskolc</option>
+                  <option value="Kazincbarcika">Kazincbarcika</option>
+                  <option value="Ózd">Ózd</option>
+                  <option value="Eger">Eger</option>
+                  <option value="Budapest">Budapest</option>
+                </select>
+              </label>
+              <label>
+                <span>Szolgáltatás típusa</span>
+                <select id="service-tier" name="service-tier">
+                  <option value="standard">Általános betegszállítás</option>
+                  <option value="guarded">Őrzött betegszállítás</option>
+                  <option value="event">Rendezvénybiztosítási kiszállás</option>
+                </select>
+              </label>
+              <button type="submit" class="button button--primary button--full">Becslés készítése</button>
+            </form>
+
+            <div class="estimate-box" id="calculator-result" aria-live="polite">
+              <p class="estimate-box__label">Becsült díj</p>
+              <strong>—</strong>
+              <span>Válassza ki a két helyszínt az árbecsléshez.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--soft" id="pricing">
+        <div class="container pricing__grid">
+          <div class="panel reveal">
+            <p class="eyebrow">Árak és feltételek</p>
+            <h2>Egyedi ajánlatok, előre ismert alapfeltételekkel.</h2>
+          </div>
+          <div class="panel reveal reveal--delay">
+            <ul class="rule-list">
+              <li>3 napon belüli rendezvénymegrendelés esetén +50% felár.</li>
+              <li>5 napon belüli lemondás esetén az esemény 50%-a fizetendő.</li>
+              <li>Hosszabb távú együttműködés esetén kedvezmény biztosítható.</li>
+              <li>Pontos árajánlatot elérhetőségeinken keresztül adunk.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="container contact__grid">
+          <div class="panel reveal">
+            <p class="eyebrow">Kapcsolatfelvétel</p>
+            <h2>Forduljon hozzánk bizalommal rendezvények vagy egyedi igények esetén.</h2>
+          </div>
+          <div class="panel reveal reveal--delay">
+            <a href="tel:+36305534160">Ügyvezető: +36 30 553 4160</a>
+            <a href="tel:+36306497638">Kapcsolati koordinátor: +36 30 649 7638</a>
+            <a href="mailto:drabonmed@gmail.com">drabonmed@gmail.com</a>
+            <p>3775 Kondó, Kossuth Lajos utca 12.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <p>© <span id="year"></span> Drabon Med Egészségügyi Szolgáltató Kft.</p>
+        <a href="#top">Vissza a tetejére</a>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

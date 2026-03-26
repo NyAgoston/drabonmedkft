@@ -1,0 +1,10 @@
+{
+  "name": "drabon-med-redesign-demos",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Vanilla HTML/CSS/JS redesign demos for Drabon Med",
+  "scripts": {
+    "start": "python3 -m http.server 4173",
+    "check": "python3 - <<'PY'\nimport pathlib\nfrom html.parser import HTMLParser\nroot = pathlib.Path('.')\nhtml_files = list(root.rglob('*.html'))\ncss_files = list(root.rglob('*.css'))\njs_files = list(root.rglob('*.js'))\nassert html_files, 'No HTML files found'\nassert css_files, 'No CSS files found'\nassert js_files, 'No JS files found'\nclass Parser(HTMLParser):\n    pass\nfor file in html_files:\n    Parser().feed(file.read_text(encoding='utf-8'))\nfor file in css_files + js_files:\n    text = file.read_text(encoding='utf-8')\n    assert text.strip(), f'{file} is empty'\nprint(f'Validated {len(html_files)} HTML, {len(css_files)} CSS, {len(js_files)} JS files.')\nPY"
+  }
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Árkalkulátor – Red Medical Demo</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Tartalomra ugrás</a>
+    <header class="site-header">
+      <div class="header-top"><div class="container"><span data-content="contact.serviceHours"></span><span>Gyors kapcsolat: +36 30 553 4160</span></div></div>
+      <div class="container header-main">
+        <a class="brand" href="../index.html"><img src="../../../logo.png" alt="Drabon Med logó" /><div><strong>Drabon Med</strong><span>Medical red multi-page concept</span></div></a>
+        <nav class="main-nav" aria-label="Elsődleges navigáció">
+          <a href="../index.html">Főoldal</a>
+          <a href="./services.html">Szolgáltatások</a>
+          <a href="./calculator.html" class="active">Árkalkulátor</a>
+          <a href="./contact.html">Kapcsolat</a>
+        </nav>
+        <a class="header-cta" href="#calculator">Távolság árkalkulátor</a>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section id="calculator" class="section">
+        <div class="container calculator-layout">
+          <article class="panel reveal">
+            <span class="eyebrow">Mock kalkulátor</span>
+            <h1 data-content="calculatorMock.title"></h1>
+            <p data-content="calculatorMock.description"></p>
+            <div class="panel" data-pricing-panel></div>
+          </article>
+          <article class="calculator-card reveal delay-1">
+            <form id="distance-form" class="calculator-form">
+              <label>
+                Indulási hely
+                <select name="from" required></select>
+              </label>
+              <label>
+                Érkezési hely
+                <select name="to" required></select>
+              </label>
+              <label>
+                Szállítás típusa
+                <select name="serviceType">
+                  <option value="standard">Normál betegszállítás</option>
+                  <option value="guarded">Őrzött betegszállítás</option>
+                </select>
+              </label>
+              <button type="submit" class="button primary full-width">Becsült ár kiszámítása</button>
+            </form>
+            <div class="result-panel" aria-live="polite">
+              <p>Becsült összeg</p>
+              <strong id="result-price">—</strong>
+              <p id="result-meta">A pontos algoritmus később térképes API-val helyettesíthető.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-shell">
+        <div><strong>Red medical demo · Árkalkulátor</strong><p>Külön oldal a gyors árbecslési funkciónak.</p></div>
+        <a class="button secondary" href="../index.html">Vissza a főoldalra</a>
+      </div>
+    </footer>
+
+    <script src="../../../shared/content.js"></script>
+    <script src="../script.js"></script>
+  </body>
+</html>

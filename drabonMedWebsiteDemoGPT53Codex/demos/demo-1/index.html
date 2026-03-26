@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drabon Med – Redesign Demo 1</title>
+    <meta
+      name="description"
+      content="Drabon Med redesign demo: modern, light, responsive healthcare website concept with mock distance price calculator."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Tartalomra ugrás</a>
+    <div class="page-bg"></div>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#hero" aria-label="Drabon Med főoldal">
+          <img src="../../logo.png" alt="Drabon Med logó" />
+          <span>Drabon Med</span>
+        </a>
+        <nav class="main-nav" aria-label="Elsődleges navigáció">
+          <a href="#services">Szolgáltatások</a>
+          <a href="#about">Bemutatkozás</a>
+          <a href="#calculator">Árkalkulátor</a>
+          <a href="#contact">Kapcsolat</a>
+        </nav>
+        <a class="header-cta" href="#calculator">Távolság alapú árkalkulátor</a>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section id="hero" class="hero section">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal-on-scroll">
+            <span class="eyebrow" data-content="hero.eyebrow"></span>
+            <h1 data-content="hero.title"></h1>
+            <p class="hero-text" data-content="hero.description"></p>
+            <div class="hero-actions">
+              <a class="button primary" href="#contact" data-content="hero.primaryCta"></a>
+              <a class="button secondary" href="#calculator" data-content="hero.secondaryCta"></a>
+            </div>
+            <dl class="metrics" data-metrics></dl>
+          </div>
+          <div class="hero-visual reveal-on-scroll delay-1">
+            <div class="glass-card floating-card">
+              <img src="../../car.jpg" alt="Drabon Med mentő jármű" class="hero-photo" />
+              <div class="floating-card-body">
+                <strong>Gyors reagálás, tiszta kommunikáció</strong>
+                <p>Rendezvényekhez, intézményekhez és betegszállításhoz.</p>
+              </div>
+            </div>
+            <div class="trust-badges">
+              <article class="trust-card">
+                <img src="../../badge.jpg" alt="Szolgáltatási azonosító jelvény" />
+                <div>
+                  <strong>Szakmai háttér</strong>
+                  <p>Valós szolgáltatásokra épített bemutató tartalom.</p>
+                </div>
+              </article>
+              <article class="trust-card accent">
+                <strong>Mobilbarát felépítés</strong>
+                <p>Nagy gombokkal, erős kontraszttal és egyszerű navigációval.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section intro-strip reveal-on-scroll">
+        <div class="container intro-grid" data-intro></div>
+      </section>
+
+      <section id="services" class="section">
+        <div class="container">
+          <div class="section-heading reveal-on-scroll">
+            <span class="eyebrow">Szolgáltatások</span>
+            <h2>Átlátható választás, gyors eligazodás.</h2>
+            <p>A szolgáltatásokat külön blokkban, könnyen átolvasható pontokkal jelenítjük meg.</p>
+          </div>
+          <div class="service-grid" data-services></div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container showcase-grid">
+          <div class="showcase-copy reveal-on-scroll">
+            <span class="eyebrow">Bemutatkozás</span>
+            <h2>Emberközpontú működés és folyamatos fejlesztés.</h2>
+            <div class="copy-stack" data-about></div>
+          </div>
+          <div class="showcase-photo reveal-on-scroll delay-1">
+            <img src="../../logo.png" alt="Drabon Med embléma" />
+            <div class="support-card">
+              <strong>Idősebb felhasználóknak is könnyen használható</strong>
+              <p>Fókusz a nagy méreten, a rövid utakra bontott feladatokon és a látható kapcsolatfelvételen.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="calculator" class="section calculator-section">
+        <div class="container calculator-grid">
+          <div class="calculator-copy reveal-on-scroll">
+            <span class="eyebrow">Mock funkció</span>
+            <h2 data-content="calculatorMock.title"></h2>
+            <p data-content="calculatorMock.description"></p>
+            <div class="pricing-callouts" data-pricing></div>
+          </div>
+          <div class="calculator-card reveal-on-scroll delay-1">
+            <form id="distance-form" class="calculator-form">
+              <label>
+                Indulási hely
+                <select name="from" required></select>
+              </label>
+              <label>
+                Érkezési hely
+                <select name="to" required></select>
+              </label>
+              <label>
+                Szállítás típusa
+                <select name="serviceType">
+                  <option value="standard">Normál betegszállítás</option>
+                  <option value="guarded">Őrzött betegszállítás</option>
+                </select>
+              </label>
+              <button type="submit" class="button primary wide">Becsült ár kiszámítása</button>
+            </form>
+            <div class="result-panel" aria-live="polite">
+              <p class="result-label">Becsült összeg</p>
+              <strong id="result-price">—</strong>
+              <p id="result-meta">Válasszon indulási és érkezési helyet.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section legal-section">
+        <div class="container legal-grid">
+          <article class="legal-card reveal-on-scroll">
+            <span class="eyebrow">Jogszabályi háttér</span>
+            <h2>Rendezvénybiztosítás</h2>
+            <ul data-legal="eventCoverage"></ul>
+          </article>
+          <article class="legal-card reveal-on-scroll delay-1">
+            <span class="eyebrow">Jogszabályi háttér</span>
+            <h2>Betegszállítás</h2>
+            <ul data-legal="patientTransport"></ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section">
+        <div class="container contact-card reveal-on-scroll">
+          <div>
+            <span class="eyebrow">Kapcsolat</span>
+            <h2>Lépjünk tovább egy gyors egyeztetéssel.</h2>
+            <p>Az ügyfélszolgálat munkanapokon érhető el. A cél itt a minél gyorsabb kapcsolatfelvétel és a bizalomépítés.</p>
+          </div>
+          <div class="contact-details" data-contact></div>
+        </div>
+      </section>
+    </main>
+
+    <script src="../../shared/content.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

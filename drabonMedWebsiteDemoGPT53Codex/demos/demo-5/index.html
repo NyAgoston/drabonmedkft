@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drabon Med – Redesign Demo 5</title>
+    <meta name="description" content="High-trust healthcare brochure style redesign demo for Drabon Med." />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Tartalomra ugrás</a>
+    <header class="site-header">
+      <div class="top-bar">
+        <div class="container top-bar-inner">
+          <span data-content="contact.serviceHours"></span>
+          <span>Telefon: +36 30 553 4160</span>
+          <span>E-mail: drabonmed@gmail.com</span>
+        </div>
+      </div>
+      <div class="container header-inner">
+        <a class="brand" href="#hero" aria-label="Drabon Med főoldal">
+          <img src="../../logo.png" alt="Drabon Med logó" />
+          <div>
+            <strong>Drabon Med</strong>
+            <span>Egészségügyi Szolgáltató Kft.</span>
+          </div>
+        </a>
+        <nav class="main-nav" aria-label="Elsődleges navigáció">
+          <a href="#services">Szolgáltatások</a>
+          <a href="#trust">Miért minket</a>
+          <a href="#calculator">Árkalkulátor</a>
+          <a href="#contact">Kapcsolat</a>
+        </nav>
+        <a class="header-cta" href="#contact">Ajánlatkérés</a>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section id="hero" class="hero section">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <span class="eyebrow">Brochure koncepció</span>
+            <h1>Megbízható egészségügyi partner professzionális megjelenéssel.</h1>
+            <p class="lead">Ez a koncepció a bizalomra, a rendezettségre és a formális, mégis jól érthető kommunikációra épít. Ideális lehet, ha a vevő komoly, stabil és hiteles vállalati benyomást szeretne.</p>
+            <div class="hero-actions">
+              <a class="button primary" href="#contact">Kapcsolatfelvétel</a>
+              <a class="button secondary" href="#calculator">Távolság alapú árkalkulátor</a>
+            </div>
+            <div class="hero-stats" data-hero-stats></div>
+          </div>
+          <div class="hero-panel reveal delay-1">
+            <img src="../../car.jpg" alt="Drabon Med mentő jármű" />
+            <div class="seal-card">
+              <img src="../../badge.jpg" alt="Drabon Med jelvény" />
+              <div>
+                <strong>Szakmai és jogszabályi háttér</strong>
+                <p>Rendezett, üzleti célú, megbízhatóságot sugárzó bemutatás.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section overview-section">
+        <div class="container overview-grid" data-overview-cards></div>
+      </section>
+
+      <section id="services" class="section services-section">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="eyebrow">Szolgáltatások</span>
+            <h2>Szolgáltatási területek formális, áttekinthető bemutatása.</h2>
+            <p>A brochure stílus miatt minden blokk rövid összefoglalót, majd lényegi pontokat tartalmaz, így üzleti tárgyalásokhoz vagy ajánlatkérésekhez is jól használható.</p>
+          </div>
+          <div class="service-grid" data-service-cards></div>
+        </div>
+      </section>
+
+      <section id="trust" class="section trust-section">
+        <div class="container trust-layout">
+          <article class="trust-card reveal">
+            <span class="eyebrow">Miért minket</span>
+            <h2>Stabil szakmai háttér és következetes működés.</h2>
+            <div class="trust-list" data-trust-points></div>
+          </article>
+          <article class="assurance-card reveal delay-1">
+            <span class="eyebrow">Jogszabályi tájékozottság</span>
+            <h2>Rendezvénybiztosítás és betegszállítás megfelelő keretrendszerben.</h2>
+            <div class="assurance-columns">
+              <div>
+                <strong>Rendezvénybiztosítás</strong>
+                <ul data-legal="eventCoverage"></ul>
+              </div>
+              <div>
+                <strong>Betegszállítás</strong>
+                <ul data-legal="patientTransport"></ul>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="calculator" class="section calculator-section">
+        <div class="container calculator-grid">
+          <article class="calculator-copy reveal">
+            <span class="eyebrow">Mock funkció</span>
+            <h2 data-content="calculatorMock.title"></h2>
+            <p data-content="calculatorMock.description"></p>
+            <div class="pricing-panel" data-pricing-panel></div>
+          </article>
+          <article class="calculator-card reveal delay-1">
+            <form id="distance-form" class="calculator-form">
+              <label>
+                Indulási hely
+                <select name="from" required></select>
+              </label>
+              <label>
+                Érkezési hely
+                <select name="to" required></select>
+              </label>
+              <label>
+                Szállítás típusa
+                <select name="serviceType">
+                  <option value="standard">Normál betegszállítás</option>
+                  <option value="guarded">Őrzött betegszállítás</option>
+                </select>
+              </label>
+              <button type="submit" class="button primary full-width">Becsült ár kiszámítása</button>
+            </form>
+            <div class="result-panel" aria-live="polite">
+              <p>Becsült összeg</p>
+              <strong id="result-price">—</strong>
+              <p id="result-meta">A végleges ár később a pontos útvonal‑algoritmus alapján számolható.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section">
+        <div class="container contact-layout reveal">
+          <div>
+            <span class="eyebrow">Kapcsolat</span>
+            <h2>Elérhetőségek és következő lépés.</h2>
+            <p>Ebben a demóban a kapcsolat blokk a brochure-szerű struktúra lezárása: rövid, egyértelmű és hivatalos hangvételű.</p>
+          </div>
+          <div class="contact-grid" data-contact-grid></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-shell">
+        <div>
+          <strong>Drabon Med redesign · Demo 5</strong>
+          <p>High-trust healthcare brochure single-page koncepció.</p>
+        </div>
+        <a class="button secondary" href="../../index.html">Vissza a demo választóhoz</a>
+      </div>
+    </footer>
+
+    <script src="../../shared/content.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

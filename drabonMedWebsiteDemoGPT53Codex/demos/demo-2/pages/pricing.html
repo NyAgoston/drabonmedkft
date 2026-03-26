@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Árak és kalkulátor – Drabon Med Demo 2</title>
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Tartalomra ugrás</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="../index.html">
+          <img src="../../../logo.png" alt="Drabon Med logó" />
+          <span>Drabon Med</span>
+        </a>
+        <nav class="main-nav" aria-label="Elsődleges navigáció">
+          <a href="../index.html">Főoldal</a>
+          <a href="./services.html">Szolgáltatások</a>
+          <a href="./pricing.html" class="active">Árak és kalkulátor</a>
+          <a href="./contact.html">Kapcsolat</a>
+        </nav>
+        <a class="header-cta" href="#calculator">Távolság alapú árkalkulátor</a>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="page-hero">
+        <div class="container page-hero-grid">
+          <div class="hero-content reveal">
+            <span class="eyebrow">Árak és kalkulátor</span>
+            <h1>Egyedi ajánlatkérés mellett gyors, látható demo kalkulátor.</h1>
+            <p data-content="pricing.description"></p>
+          </div>
+          <article class="pricing-card reveal">
+            <h2 data-content="pricing.title"></h2>
+            <ul data-pricing-highlights></ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="calculator" class="section">
+        <div class="container calculator-layout">
+          <article class="calculator-card reveal">
+            <span class="eyebrow">Mock térképes funkció</span>
+            <h2 data-content="calculatorMock.title"></h2>
+            <p data-content="calculatorMock.description"></p>
+            <form id="distance-form" class="calculator-form">
+              <label>
+                Indulási hely
+                <select name="from" required></select>
+              </label>
+              <label>
+                Érkezési hely
+                <select name="to" required></select>
+              </label>
+              <label>
+                Szállítás típusa
+                <select name="serviceType">
+                  <option value="standard">Normál betegszállítás</option>
+                  <option value="guarded">Őrzött betegszállítás</option>
+                </select>
+              </label>
+              <button class="button primary" type="submit">Becsült ár kiszámítása</button>
+            </form>
+            <div class="result-panel" aria-live="polite">
+              <p>Becsült összeg</p>
+              <strong id="result-price">—</strong>
+              <p id="result-meta">A pontos algoritmus később térképes API-val váltható ki.</p>
+            </div>
+          </article>
+          <article class="rules-card reveal">
+            <span class="eyebrow">Betegszállítás</span>
+            <h2>Tájékoztató háttér és következő lépés.</h2>
+            <ul data-legal="patientTransport"></ul>
+            <p>Ebben a koncepcióban a kalkulátor külön oldalt kap, így kiemelten látható marad és később könnyen továbbfejleszthető.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-card">
+        <div>
+          <strong>Demo 2 · Ár és kalkulátor oldal</strong>
+          <p>Külön landing szerű oldal a konverziós funkcióhoz.</p>
+        </div>
+        <a class="button secondary" href="../index.html">Vissza a főoldalra</a>
+      </div>
+    </footer>
+
+    <script src="../../../shared/content.js"></script>
+    <script src="../script.js"></script>
+  </body>
+</html>

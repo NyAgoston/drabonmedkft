@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ár Kalkulátor – Drabon Med</title>
+    <link rel="stylesheet" href="shared.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="top-bar"><div class="container top-bar-inner"><span>📞 +36 30 553 4160</span><span>✉️ drabonmed@gmail.com</span><span>🕗 H-P: 8:00–20:00</span></div></div>
+        <nav class="navbar"><div class="container nav-inner">
+            <a href="index.html" class="logo"><img src="../logo.png" alt="Drabon Med"></a>
+            <ul class="nav-links" id="navLinks"><li><a href="index.html">Főoldal</a></li><li><a href="services.html">Szolgáltatások</a></li><li><a href="regulations.html">Jogszabályok</a></li><li><a href="prices.html">Árak</a></li><li><a href="contact.html">Kapcsolat</a></li></ul>
+            <a href="calculator.html" class="nav-cta active">💰 Ár Kalkulátor</a>
+            <button class="hamburger" id="hamburger" aria-label="Menü"><span></span><span></span><span></span></button>
+        </div></nav>
+    </header>
+
+    <section class="page-hero calculator-hero">
+        <div class="container">
+            <span class="section-tag">Kalkulátor</span>
+            <h1>Szállítási Ár Kalkulátor</h1>
+            <p>Adja meg az indulási és érkezési pontot, és kiszámoljuk a becsült szállítási költséget.</p>
+        </div>
+    </section>
+
+    <section class="page-content">
+        <div class="container">
+            <div class="calculator-wrapper fade-in">
+                <div class="calc-inputs">
+                    <div class="input-group">
+                        <label for="origin">📍 Indulási pont</label>
+                        <input type="text" id="origin" placeholder="pl. Budapest">
+                    </div>
+                    <div class="input-group">
+                        <label for="destination">🏁 Érkezési pont</label>
+                        <input type="text" id="destination" placeholder="pl. Debrecen">
+                    </div>
+                    <button class="btn btn-primary btn-block" id="calcBtn">Ár kiszámítása</button>
+                </div>
+
+                <div class="calc-map-area">
+                    <div class="mock-map">
+                        <div class="map-icon">🗺️</div>
+                        <p>Térkép nézet</p>
+                        <small>(API integráció hamarosan)</small>
+                    </div>
+                </div>
+
+                <div class="calc-result" id="calcResult" style="display:none;">
+                    <h3>Becsült költség</h3>
+                    <div class="result-grid">
+                        <div class="result-item"><span>Távolság</span><strong id="resultDistance"></strong></div>
+                        <div class="result-item"><span>Becsült idő</span><strong id="resultTime"></strong></div>
+                        <div class="result-item result-highlight"><span>Becsült ár</span><strong id="resultPrice"></strong></div>
+                    </div>
+                    <p class="result-note">* A végső ár egyedi megbeszélés alapján változhat.</p>
+                    <a href="contact.html" class="btn btn-primary">Pontos ajánlat kérése →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col"><img src="../logo.png" alt="Drabon Med" class="footer-logo"><p>Professzionális egészségügyi szolgáltatások.</p></div>
+            <div class="footer-col"><h4>Navigáció</h4><a href="index.html">Főoldal</a><a href="services.html">Szolgáltatások</a><a href="regulations.html">Jogszabályok</a><a href="prices.html">Árak</a><a href="contact.html">Kapcsolat</a></div>
+            <div class="footer-col"><h4>Elérhetőségek</h4><p>📞 +36 30 553 4160</p><p>✉️ drabonmed@gmail.com</p><p>📍 3775 Kondó, Kossuth Lajos utca 12.</p></div>
+        </div>
+        <div class="container footer-bottom"><p>© 2026 Drabon Med Egészségügyi Szolgáltató Kft. Minden jog fenntartva!</p></div>
+    </footer>
+
+    <script src="shared.js"></script>
+</body>
+</html>

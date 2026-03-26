@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drabon Med – Redesign Demo 4</title>
+    <meta name="description" content="Senior-friendly, ultra-clear one-page redesign demo for Drabon Med." />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Tartalomra ugrás</a>
+    <header class="site-header">
+      <div class="container header-grid">
+        <a class="brand" href="#top" aria-label="Drabon Med főoldal">
+          <img src="../../logo.png" alt="Drabon Med logó" />
+          <div>
+            <strong>Drabon Med</strong>
+            <span>Egészségügyi szolgáltatások egyszerűen átlátható módon</span>
+          </div>
+        </a>
+        <div class="header-actions">
+          <a class="quick-call" href="tel:+36305534160">Hívás most: +36 30 553 4160</a>
+          <a class="quick-button" href="#calculator">Árkalkulátor</a>
+        </div>
+      </div>
+      <nav class="main-nav container" aria-label="Elsődleges navigáció">
+        <a href="#services">Szolgáltatások</a>
+        <a href="#steps">Hogyan működik</a>
+        <a href="#calculator">Árkalkulátor</a>
+        <a href="#contact">Kapcsolat</a>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section id="top" class="hero section">
+        <div class="container hero-layout">
+          <div class="hero-copy reveal">
+            <span class="eyebrow">Senior-friendly koncepció</span>
+            <h1>Jól olvasható, egyszerű és gyorsan használható weboldal.</h1>
+            <p class="lead">Ez a változat azoknak készült, akik kevés kattintással, nagy felületeken és egyértelmű feliratokkal szeretnének tájékozódni.</p>
+            <div class="hero-actions">
+              <a class="primary-action" href="#contact">Kapcsolatfelvétel</a>
+              <a class="secondary-action" href="#services">Szolgáltatások</a>
+            </div>
+            <div class="hero-points">
+              <article>
+                <strong>Nagy betűk</strong>
+                <p>Könnyebb olvashatóság mobilon és nagy képernyőn.</p>
+              </article>
+              <article>
+                <strong>Rövid útvonalak</strong>
+                <p>Gyors elérés a telefonhoz, szolgáltatásokhoz és a kalkulátorhoz.</p>
+              </article>
+            </div>
+          </div>
+          <div class="hero-visual reveal delay-1">
+            <img src="../../car.jpg" alt="Drabon Med jármű" />
+            <div class="visual-note">
+              <strong>Kiemelt cél: átláthatóság</strong>
+              <p>Erős kontraszt, nagy gombok, rövid blokkok, világos szerkezet.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section intro-section">
+        <div class="container intro-cards" data-intro-cards></div>
+      </section>
+
+      <section id="services" class="section services-section">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="eyebrow">Szolgáltatások</span>
+            <h2>Négy fő terület, egyszerűen áttekintve.</h2>
+            <p>Nincs zsúfoltság, nincs túl sok döntési pont. A legfontosabb információk rövid listákba rendezve jelennek meg.</p>
+          </div>
+          <div class="service-cards" data-service-cards></div>
+        </div>
+      </section>
+
+      <section id="steps" class="section steps-section">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="eyebrow">Hogyan működik</span>
+            <h2>3 egyszerű lépésben.</h2>
+          </div>
+          <div class="step-grid">
+            <article class="step-card reveal">
+              <span class="step-number">1</span>
+              <strong>Vegye fel velünk a kapcsolatot</strong>
+              <p>Telefonon vagy e-mailben gyorsan egyeztetjük az igényt.</p>
+            </article>
+            <article class="step-card reveal delay-1">
+              <span class="step-number">2</span>
+              <strong>Kiválasztjuk a megfelelő szolgáltatást</strong>
+              <p>Segítünk eldönteni, milyen típusú biztosításra vagy szállításra van szükség.</p>
+            </article>
+            <article class="step-card reveal delay-2">
+              <span class="step-number">3</span>
+              <strong>Gyors visszajelzést adunk</strong>
+              <p>Árajánlatot és további információt adunk az egyeztetés alapján.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="calculator" class="section calculator-section">
+        <div class="container calculator-layout">
+          <div class="calculator-copy reveal">
+            <span class="eyebrow">Látható funkció</span>
+            <h2 data-content="calculatorMock.title"></h2>
+            <p data-content="calculatorMock.description"></p>
+            <div class="pricing-box" data-pricing-box></div>
+          </div>
+          <article class="calculator-card reveal delay-1">
+            <form id="distance-form" class="calculator-form">
+              <label>
+                Indulási hely
+                <select name="from" required></select>
+              </label>
+              <label>
+                Érkezési hely
+                <select name="to" required></select>
+              </label>
+              <label>
+                Szállítás típusa
+                <select name="serviceType">
+                  <option value="standard">Normál betegszállítás</option>
+                  <option value="guarded">Őrzött betegszállítás</option>
+                </select>
+              </label>
+              <button type="submit" class="primary-action full-width">Becsült ár kiszámítása</button>
+            </form>
+            <div class="result-panel" aria-live="polite">
+              <p>Becsült ár</p>
+              <strong id="result-price">—</strong>
+              <p id="result-meta">Válasszon indulási és érkezési pontot.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section rules-section">
+        <div class="container rules-layout">
+          <article class="rules-card reveal">
+            <span class="eyebrow">Rendezvénybiztosítás</span>
+            <h2>Fontos tudnivalók</h2>
+            <ul data-legal="eventCoverage"></ul>
+          </article>
+          <article class="rules-card reveal delay-1">
+            <span class="eyebrow">Betegszállítás</span>
+            <h2>Fontos tudnivalók</h2>
+            <ul data-legal="patientTransport"></ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section">
+        <div class="container contact-shell reveal">
+          <div>
+            <span class="eyebrow">Kapcsolat</span>
+            <h2>Elérhetőségek jól láthatóan.</h2>
+            <p>Ez a lezárás direkt módon támogatja a gyors kapcsolatfelvételt.</p>
+          </div>
+          <div class="contact-list" data-contact-list></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-shell">
+        <div>
+          <strong>Drabon Med redesign · Demo 4</strong>
+          <p>Senior-friendly, ultra-clear single-page koncepció.</p>
+        </div>
+        <a class="secondary-action" href="../../index.html">Vissza a demo választóhoz</a>
+      </div>
+    </footer>
+
+    <script src="../../shared/content.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

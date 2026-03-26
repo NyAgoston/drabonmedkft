@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drabon Med – Egészségügyi Szolgáltató</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="nav" id="nav">
+        <div class="nav-inner">
+            <a href="#" class="nav-brand"><img src="../logo.png" alt="Drabon Med"></a>
+            <div class="nav-center" id="navCenter">
+                <a href="#about" class="nav-link">Rólunk</a>
+                <a href="#services" class="nav-link">Szolgáltatások</a>
+                <a href="#regulations" class="nav-link">Jogszabályok</a>
+                <a href="#prices" class="nav-link">Árak</a>
+                <a href="#contact" class="nav-link">Kapcsolat</a>
+            </div>
+            <a href="#calc" class="nav-action">📍 Ár Kalkulátor</a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Menü">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24">
+                    <path d="M4 6h16M4 12h16M4 18h16" id="menuIcon"/>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- HERO — full viewport -->
+    <section class="hero-section" id="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="hero-tag slide-up">Egészségügyi Szolgáltató Kft.</span>
+            <h1 class="hero-h1 slide-up d1">Drabon Med</h1>
+            <p class="hero-p slide-up d2">Professzionális betegszállítás, rendezvénybiztosítás és elsősegély oktatás — egy helyen.</p>
+            <div class="hero-btns slide-up d3">
+                <a href="#services" class="btn-fill">Szolgáltatások</a>
+                <a href="#calc" class="btn-ghost">Ár Kalkulátor →</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Görgessen le</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="full-section" id="about">
+        <div class="container split">
+            <div class="split-img reveal-left">
+                <img src="../badge.jpg" alt="Drabon Med">
+            </div>
+            <div class="split-text reveal-right">
+                <span class="tag">Bemutatkozás</span>
+                <h2>Köszöntjük weboldalunkon!</h2>
+                <p>Üdvözli Önt <strong>Drabon József</strong>, a Drabon Med Kft. ügyvezető igazgatója. Célunk a megfelelő, pontos és precíz egészségügyi szolgáltatások nyújtása.</p>
+                <p>Működésünket rendezvények egészségügyi biztosításával kezdtük, amit a mai napig fenntartunk. Mára kimagaslóan felszerelt saját mentőgépjárművel is rendelkezünk.</p>
+                <p>Hétről hétre fejlesztjük eszközparkunkat, hogy a betegeket a legkorszerűbb eszközökkel tudjuk ellátni.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES — horizontal scroll -->
+    <section class="full-section services-sec" id="services">
+        <div class="container">
+            <span class="tag">Szolgáltatások</span>
+            <h2 class="sec-title">Amit kínálunk</h2>
+            <p class="sec-sub">Mi segítünk kiválasztani az Önnek megfelelő egészségügyi biztosítás típusát.</p>
+        </div>
+        <div class="hscroll-wrapper">
+            <div class="hscroll-track" id="hscroll">
+                <div class="svc-card gradient-1">
+                    <div class="svc-num">01</div>
+                    <h3>Betegszállítás</h3>
+                    <p>Betegszállítás és őrzött betegszállítás kiemelkedő gépkocsi felszereltséggel és szakértő munkatársakkal.</p>
+                </div>
+                <div class="svc-card gradient-2">
+                    <div class="svc-num">02</div>
+                    <h3>Rendezvénybiztosítás</h3>
+                    <p>Gyalogőrség, mentőgépkocsis és esetkocsis mozgóőrség rendezvényekre, sporteseményekre.</p>
+                </div>
+                <div class="svc-card gradient-3">
+                    <div class="svc-num">03</div>
+                    <h3>Elsősegély oktatás</h3>
+                    <p>Minimum 1×4 órás oktatások — újraélesztés, kötözés, allergiás reakciók kezelése. Iskoláknak, cégeknek.</p>
+                </div>
+                <div class="svc-card gradient-4">
+                    <div class="svc-num">04</div>
+                    <h3>Elsősegélynyújtóhelyek</h3>
+                    <p>Egészségügyi helyiségek berendezése és üzemeltetése áruházakban, plázákban, építkezéseken.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CALCULATOR -->
+    <section class="full-section calc-section" id="calc">
+        <div class="container">
+            <span class="tag">Kalkulátor</span>
+            <h2 class="sec-title">Szállítási Ár Kalkulátor</h2>
+            <p class="sec-sub">Válassza ki az indulási és érkezési pontot — kiszámoljuk a becsült árat.</p>
+            <div class="calc-box reveal-up">
+                <div class="calc-row">
+                    <div class="calc-input">
+                        <label>Indulási pont</label>
+                        <input type="text" id="origin" placeholder="pl. Budapest">
+                    </div>
+                    <div class="calc-input">
+                        <label>Érkezési pont</label>
+                        <input type="text" id="destination" placeholder="pl. Debrecen">
+                    </div>
+                    <button class="btn-fill btn-calc" id="calcBtn">Kiszámítás</button>
+                </div>
+                <div class="calc-map">
+                    <div class="map-mock">
+                        <span>🗺️</span>
+                        <p>Térkép (hamarosan)</p>
+                    </div>
+                </div>
+                <div class="calc-result" id="calcResult">
+                    <div class="res-item"><span>Távolság</span><strong id="resDist"></strong></div>
+                    <div class="res-item"><span>Becsült idő</span><strong id="resTime"></strong></div>
+                    <div class="res-item res-highlight"><span>Becsült ár</span><strong id="resPrice"></strong></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REGULATIONS -->
+    <section class="full-section" id="regulations">
+        <div class="container">
+            <span class="tag">Jogszabályok</span>
+            <h2 class="sec-title">Vonatkozó jogszabályok</h2>
+            <div class="reg-grid">
+                <div class="reg-block reveal-up">
+                    <h3>Rendezvénybiztosítás</h3>
+                    <p class="reg-ref">5/2006. (II. 7.) EüM rendelet • 54/2004. (III. 31.) Korm. rendelet</p>
+                    <p><strong>Gyalogőrség:</strong> 1001 fő alatti rendezvények, zárt térben 300–1000 fő esetén 1 fő szükséges.</p>
+                    <p><strong>Mozgóőrség:</strong> 1000–5000 fő esetén esetkocsi + mentőgépkocsi, max. 10 perc elérési idő.</p>
+                </div>
+                <div class="reg-block reveal-up">
+                    <h3>Betegszállítás</h3>
+                    <p class="reg-ref">19/1998. (VI. 3.) NM rendelet</p>
+                    <p>Sürgősség: 6 órán belüli / 24 órán belüli / tervezett.</p>
+                    <p>Gépjármű: mentőkocsi / fekvőbeteg-szállító / ülőbeteg-szállító.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICES -->
+    <section class="full-section prices-sec" id="prices">
+        <div class="container narrow-center">
+            <span class="tag">Árak</span>
+            <h2 class="sec-title">Áraink</h2>
+            <div class="price-card reveal-up">
+                <h3>Egyedi árajánlat</h3>
+                <p>Keressen minket bizalommal az elérhetőségeink egyikén. Hosszabb távú együttműködés esetén kedvezményt biztosítunk.</p>
+                <div class="price-alerts">
+                    <div class="p-alert">⚠️ 3 napon belüli megrendelés: <strong>+50% felár</strong></div>
+                    <div class="p-alert">📋 5 napon belüli lemondás: <strong>50% fizetendő</strong></div>
+                </div>
+                <small>Az árváltozás jogát fenntartjuk!</small>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="full-section" id="contact">
+        <div class="container">
+            <span class="tag">Kapcsolat</span>
+            <h2 class="sec-title">Elérhetőségeink</h2>
+            <p class="sec-sub">Munkanapokon 8–20 óra között.</p>
+            <div class="contact-row">
+                <div class="c-card reveal-up">
+                    <span>📞</span>
+                    <h4>Ügyvezető</h4>
+                    <a href="tel:+36305534160">+36 30 553 4160</a>
+                </div>
+                <div class="c-card reveal-up">
+                    <span>📞</span>
+                    <h4>Koordinátor</h4>
+                    <a href="tel:+36306497638">+36 30 649 7638</a>
+                </div>
+                <div class="c-card reveal-up">
+                    <span>✉️</span>
+                    <h4>E-mail</h4>
+                    <a href="mailto:drabonmed@gmail.com">drabonmed@gmail.com</a>
+                </div>
+                <div class="c-card reveal-up">
+                    <span>📍</span>
+                    <h4>Cím</h4>
+                    <p>3775 Kondó, Kossuth L. u. 12.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <img src="../logo.png" alt="Drabon Med" class="f-logo">
+            <p>© 2026 Drabon Med Egészségügyi Szolgáltató Kft. Minden jog fenntartva!</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Szolgáltatások – Drabon Med</title>
+    <link rel="stylesheet" href="shared.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="top-bar"><div class="container top-bar-inner"><span>📞 +36 30 553 4160</span><span>✉️ drabonmed@gmail.com</span><span>🕗 H-P: 8:00–20:00</span></div></div>
+        <nav class="navbar"><div class="container nav-inner">
+            <a href="index.html" class="logo"><img src="../logo.png" alt="Drabon Med"></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Főoldal</a></li>
+                <li><a href="services.html" class="active">Szolgáltatások</a></li>
+                <li><a href="regulations.html">Jogszabályok</a></li>
+                <li><a href="prices.html">Árak</a></li>
+                <li><a href="contact.html">Kapcsolat</a></li>
+            </ul>
+            <a href="calculator.html" class="nav-cta">💰 Ár Kalkulátor</a>
+            <button class="hamburger" id="hamburger" aria-label="Menü"><span></span><span></span><span></span></button>
+        </div></nav>
+    </header>
+
+    <!-- PAGE HEADER -->
+    <section class="page-hero">
+        <div class="container">
+            <span class="section-tag">Amit kínálunk</span>
+            <h1>Szolgáltatásaink</h1>
+            <p>A rendezvények egészségügyi biztosítása minden szempontból fontos, egyben kiemelkedő szerepet tölt be.</p>
+        </div>
+    </section>
+
+    <!-- SERVICES CONTENT -->
+    <section class="page-content">
+        <div class="container">
+            <!-- Tabs -->
+            <div class="tabs" id="serviceTabs">
+                <button class="tab active" data-target="transport">🚑 Betegszállítás</button>
+                <button class="tab" data-target="events">🛡️ Rendezvénybiztosítás</button>
+                <button class="tab" data-target="training">📚 Elsősegély oktatás</button>
+                <button class="tab" data-target="stations">➕ Elsősegélynyújtóhelyek</button>
+            </div>
+
+            <!-- Tab Panels -->
+            <div class="tab-panel active" id="transport">
+                <div class="panel-grid">
+                    <div class="panel-text">
+                        <h2>Betegszállítás – Őrzött betegszállítás</h2>
+                        <p>Cégünk tevékenységi körébe természetesen a betegszállítás mellett, az őrzött betegszállítás is megtalálható.</p>
+                        <p>Kiemelkedő gépkocsi felszereltségünk mellett munkatársaink szakértelmére is számíthat, amennyiben Ön, vagy hozzátartozója számára kívánja igénybe venni szolgáltatásunkat.</p>
+                        <p>Szolgáltatásunk megrendelési lehetősége a kapcsolat menüpontban feltüntetett elérhetőségeink egyikén történik.</p>
+                        <div class="panel-actions">
+                            <a href="calculator.html" class="btn btn-primary">Ár kalkulátor →</a>
+                            <a href="contact.html" class="btn btn-outline">Kapcsolat</a>
+                        </div>
+                    </div>
+                    <div class="panel-img"><img src="../car.jpg" alt="Mentőgépjármű"></div>
+                </div>
+            </div>
+
+            <div class="tab-panel" id="events">
+                <div class="panel-grid">
+                    <div class="panel-text">
+                        <h2>Rendezvénybiztosítás</h2>
+                        <p>A kilátogatók, vendégek részére biztonságérzetet nyújt egy egészségügyi személyzet jelenléte, akik ha kell azonnali elsősegélyben tudják részesíteni embertársaikat.</p>
+                        <p>Számos szintről beszélhetünk, amivel akár gyalogosan, földi egységekkel, vagy akár a vízen is biztosítható egy rendezvény.</p>
+                        <p>Cégünk gyalogőrség, mentőgépkocsis, illetve esetkocsis mozgóőrségekben is szerepet tud vállalni.</p>
+                        <h3>Gyalogőrség</h3>
+                        <p><strong>5/2006. (II. 7.) EüM rendelet:</strong> Épületben vagy kis területre korlátozott szabadtéren, 1001 főnél kevesebb résztvevővel. Zárt térben 300–1000 fő közötti zenés táncos rendezvénynél egy fő gyalogőrség szükséges.</p>
+                        <h3>Mentőgépkocsis mozgóőrség</h3>
+                        <p>1000–5000 fő részvétele esetén egy esetkocsi és a szükséges számú mentőgépkocsi biztosítandó, hogy a legtávolabbi pont 10 percen belül elérhető legyen.</p>
+                        <div class="panel-actions">
+                            <a href="contact.html" class="btn btn-primary">Ajánlatkérés</a>
+                        </div>
+                    </div>
+                    <div class="panel-img"><img src="../badge.jpg" alt="Jelvény"></div>
+                </div>
+            </div>
+
+            <div class="tab-panel" id="training">
+                <div class="panel-grid">
+                    <div class="panel-text">
+                        <h2>Elsősegély oktatások</h2>
+                        <p>Az elsősegélynyújtás alapjai a mai világban létfontosságúnak számítanak. Az elsősegélynyújtás nincs életkorhoz kötve, nincs szakmai végzettséghez kötve, csupán az akarathoz és a tanuláshoz kötött.</p>
+                        <p>Ahhoz, hogy az elsősegélynyújtás alapjait elsajátítsák, cégünk oktatások lebonyolításában tud segíteni, ami minimum <strong>1×4 órás</strong> időintervallumot foglal magába.</p>
+                        <h3>Az oktatás tartalma:</h3>
+                        <ul>
+                            <li>Eszméletlen betegek akut ellátása</li>
+                            <li>Kötözések, műfogások</li>
+                            <li>Allergiás reakciók kezelése</li>
+                            <li>Újraélesztés AMBU babán és oktató defibrillátoron</li>
+                        </ul>
+                        <h3>Megrendelhető:</h3>
+                        <ul>
+                            <li>Óvodákba</li>
+                            <li>Iskolákba</li>
+                            <li>Munkahelyekre</li>
+                            <li>Táborokba</li>
+                        </ul>
+                        <div class="panel-actions">
+                            <a href="contact.html" class="btn btn-primary">Megrendelés</a>
+                        </div>
+                    </div>
+                    <div class="panel-img"><img src="../badge.jpg" alt="Elsősegély"></div>
+                </div>
+            </div>
+
+            <div class="tab-panel" id="stations">
+                <div class="panel-grid">
+                    <div class="panel-text">
+                        <h2>Elsősegélynyújtóhelyek kialakítása</h2>
+                        <p>Az elsősegélynyújtó helyek a nagy forgalmú, perem, vagy központi helyen lévő nagy áruházak, plázák, építkezések, egyéb létesítményekben kerülhetnek kialakításra.</p>
+                        <p>Egy komplexumban kialakított elsősegélynyújtó helyiség biztonságérzetet, jó közérzetet nyújthat vendégeik, alkalmazottaik körében.</p>
+                        <p>A kialakított elsősegélynyújtóhelyeken minden olyan egészségügyi eszköz, felszerelés elérhető, amelyek elengedhetetlenek az azonnali beavatkozások elvégzésére.</p>
+                        <p><strong>Vállaljuk egészségügyi helyiségek berendezését, illetve üzemeltetését.</strong></p>
+                        <div class="panel-actions">
+                            <a href="contact.html" class="btn btn-primary">Kapcsolatfelvétel</a>
+                        </div>
+                    </div>
+                    <div class="panel-img"><img src="../car.jpg" alt="Elsősegélynyújtóhely"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col"><img src="../logo.png" alt="Drabon Med" class="footer-logo"><p>Professzionális egészségügyi szolgáltatások.</p></div>
+            <div class="footer-col"><h4>Navigáció</h4><a href="index.html">Főoldal</a><a href="services.html">Szolgáltatások</a><a href="regulations.html">Jogszabályok</a><a href="prices.html">Árak</a><a href="contact.html">Kapcsolat</a></div>
+            <div class="footer-col"><h4>Elérhetőségek</h4><p>📞 +36 30 553 4160</p><p>✉️ drabonmed@gmail.com</p><p>📍 3775 Kondó, Kossuth Lajos utca 12.</p></div>
+        </div>
+        <div class="container footer-bottom"><p>© 2026 Drabon Med Egészségügyi Szolgáltató Kft. Minden jog fenntartva!</p></div>
+    </footer>
+
+    <script src="shared.js"></script>
+</body>
+</html>
