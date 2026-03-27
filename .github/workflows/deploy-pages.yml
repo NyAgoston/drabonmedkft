@@ -1,0 +1,56 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Prepare deploy folder
+        run: |
+          mkdir -p _site/demo2
+          mkdir -p _site/demo3
+          mkdir -p _site/demo6
+          cp -r drabonMedWebsiteDemoOpus4.6/demo2-multi-page-classic/* _site/demo2/
+          cp -r drabonMedWebsiteDemoOpus4.6/demo3-fullscreen-sections/* _site/demo3/
+          cp -r drabonMedWebsiteDemoOpus4.6/demo6-red-medical-single/* _site/demo6/
+          # Copy shared assets (logo, images) into each demo
+          for dir in demo2 demo3 demo6; do
+            cp -n drabonMedWebsiteDemoOpus4.6/logo.png _site/$dir/../logo.png 2>/dev/null || true
+            cp -n drabonMedWebsiteDemoOpus4.6/car.jpg _site/$dir/../car.jpg 2>/dev/null || true
+            cp -n drabonMedWebsiteDemoOpus4.6/badge.jpg _site/$dir/../badge.jpg 2>/dev/null || true
+          done
+          # Shared assets at parent level for relative paths (../logo.png etc.)
+          cp -f drabonMedWebsiteDemoOpus4.6/logo.png _site/logo.png
+          cp -f drabonMedWebsiteDemoOpus4.6/car.jpg _site/car.jpg
+          cp -f drabonMedWebsiteDemoOpus4.6/badge.jpg _site/badge.jpg
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: "_site"
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
