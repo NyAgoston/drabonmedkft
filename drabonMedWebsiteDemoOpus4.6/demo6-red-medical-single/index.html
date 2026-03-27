@@ -8,8 +8,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- ===================== NAVBAR ===================== -->
-    <nav class="navbar" id="navbar">
+    <!-- ===================== TOP BAR ===================== -->
+    <header class="header-wrap">
+        <div class="top-bar">
+            <div class="container top-bar-inner">
+                <span>📞 <a href="tel:+36305534160">+36 30 553 4160</a></span>
+                <span>✉️ <a href="mailto:drabonmed@gmail.com">drabonmed@gmail.com</a></span>
+                <span>🕗 H-P: 8:00–20:00</span>
+            </div>
+        </div>
+
+        <!-- ===================== NAVBAR ===================== -->
+        <nav class="navbar" id="navbar">
         <div class="nav-container">
             <a href="#hero" class="nav-logo">
                 <img src="../logo.png" alt="Drabon Med" class="logo-img">
@@ -17,6 +27,7 @@
             <ul class="nav-links" id="navLinks">
                 <li><a href="#about">Bemutatkozás</a></li>
                 <li><a href="#services">Szolgáltatások</a></li>
+                <li><a href="#gallery">Galéria</a></li>
                 <li><a href="#calculator">Ár Kalkulátor</a></li>
                 <li><a href="#regulations">Jogszabályok</a></li>
                 <li><a href="#prices">Árak</a></li>
@@ -31,12 +42,14 @@
             </button>
         </div>
     </nav>
+    </header>
 
     <!-- Mobile overlay -->
     <div class="mobile-overlay" id="mobileOverlay">
         <ul class="mobile-links">
             <li><a href="#about">Bemutatkozás</a></li>
             <li><a href="#services">Szolgáltatások</a></li>
+            <li><a href="#gallery">Galéria</a></li>
             <li><a href="#calculator">Ár Kalkulátor</a></li>
             <li><a href="#regulations">Jogszabályok</a></li>
             <li><a href="#prices">Árak</a></li>
@@ -295,6 +308,55 @@
         </div>
     </section>
 
+    <!-- ===================== GALLERY ===================== -->
+    <section class="section section-alt" id="gallery">
+        <div class="container">
+            <div class="section-label reveal">
+                <span class="cross-sm">✚</span> Galéria
+            </div>
+            <h2 class="section-title reveal">Képgaléria</h2>
+            <p class="section-sub reveal">Tekintse meg munkáink, rendezvényeink és felszereltségünk képeit.</p>
+            <div class="gallery-grid">
+                <div class="gallery-item reveal">
+                    <img src="../car.jpg" alt="Mentőgépjármű">
+                    <div class="gallery-caption">Mentőgépjárművünk</div>
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="../badge.jpg" alt="Drabon Med jelvény">
+                    <div class="gallery-caption">Drabon Med jelvény</div>
+                </div>
+                <div class="gallery-item reveal">
+                    <div class="gallery-placeholder">
+                        <span>📷</span>
+                        <p>Kép helye</p>
+                    </div>
+                    <div class="gallery-caption">Rendezvénybiztosítás</div>
+                </div>
+                <div class="gallery-item reveal">
+                    <div class="gallery-placeholder">
+                        <span>📷</span>
+                        <p>Kép helye</p>
+                    </div>
+                    <div class="gallery-caption">Elsősegély oktatás</div>
+                </div>
+                <div class="gallery-item reveal">
+                    <div class="gallery-placeholder">
+                        <span>📷</span>
+                        <p>Kép helye</p>
+                    </div>
+                    <div class="gallery-caption">Felszereltség</div>
+                </div>
+                <div class="gallery-item reveal">
+                    <div class="gallery-placeholder">
+                        <span>📷</span>
+                        <p>Kép helye</p>
+                    </div>
+                    <div class="gallery-caption">Csapatunk</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- ===================== FOOTER ===================== -->
     <footer class="footer">
         <div class="container footer-inner">
@@ -305,6 +367,7 @@
             <div class="footer-links">
                 <a href="#about">Bemutatkozás</a>
                 <a href="#services">Szolgáltatások</a>
+                <a href="#gallery">Galéria</a>
                 <a href="#prices">Árak</a>
                 <a href="#contact">Kapcsolat</a>
             </div>
